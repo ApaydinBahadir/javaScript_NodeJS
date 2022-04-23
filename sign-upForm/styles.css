@@ -1,0 +1,114 @@
+:root{
+    --color: #e6007e;
+    --txt: rgb(38, 183, 36);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--txt);
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+/* right side */
+
+.right{
+    width: 55vw;
+    background-color: rgb(223, 223, 223);
+    padding-left: 1vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.dummy-text{
+    font-weight: 700;
+    width: 90%;
+    font-size: 1.2rem;
+    flex-grow: 3;
+    margin-top: 10vw;
+}
+
+form{
+    display: flex;
+    font-weight: 300;
+    flex-grow: 5;
+    flex-flow: column wrap;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input[type=text]{
+    width: 20vw;
+}
+
+.footer-right{
+    margin-bottom: 10vw;
+}
+
+
+.up{
+    display: flex;
+    gap: 30px;
+    flex-flow: row nowrap;
+}
+
+.submit{
+    width: 10vw;
+}
+.submit:hover{
+    color: white;
+    width: 10vw;
+    background-color: var(--txt);
+    border-color: var(--txt);
+}
+
+
+/* left side */
+
+.image{
+    background-image: url(./backgroundImage.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 45vw;
+}
+
+img{
+    height: 10vw;
+}
+
+.logo-text{
+    font-size: 3vw;
+    color: var(--txt);
+}
+
+.logo{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 30px;
+
+    position: relative;
+    top: 20vh;
+    padding: 15px 0;
+}
+
+
+
+
+.note{
+    font-size: 10px;
+}
