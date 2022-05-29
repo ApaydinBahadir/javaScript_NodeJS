@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="script.js" defer></script>
+        <title>Document</title>
+        <link rel="stylesheet" href="cssReset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div id="control-board">
+            <input type="text" placeholder="Player 1" id="player-1" autocomplete="off" required>
+            <button id="start-button">Start Game</button>
+            <input type="text" placeholder="Player 2" id="player-2" autocomplete="off" required>
+        </div>
+
+        <div id="gameboard">
+            <div class="box" onClick="reply_click(this)"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
