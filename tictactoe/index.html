@@ -9,14 +9,21 @@
 
     <body>
 
-        <div id="control-board">
-            <input type="text" placeholder="Player 1" id="player-1" autocomplete="off" required>
-            <button id="start-button">Start Game</button>
-            <input type="text" placeholder="Player 2" id="player-2" autocomplete="off" required>
+        <div id="control-board-div">
+            <div id="control-board">
+                <input type="text" placeholder="Player 1" id="player-1" autocomplete="off" >
+                <button id="start-button">Start Game</button>
+                <button id="restart-button" class="hidden">Restart Game</button>
+                <input type="text" placeholder="Player 2" id="player-2" autocomplete="off">
+            </div>
+            <p id="announcement">Please Enter Names</p>
+
         </div>
 
+        
+        
         <div id="gameboard">
-            <div class="box" onClick="reply_click(this)"></div>
+            <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>

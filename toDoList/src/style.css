@@ -1,0 +1,73 @@
+body{
+    min-width: 100vh;
+    min-height: 100vh;
+
+    font-family: 'Work Sans', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.header{
+    flex: 1;
+
+    font-size: 64px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #28a745;
+}
+
+
+.main{
+    flex: 10;
+    background-color: #dc3545;
+
+    display: grid;
+    grid-template-columns: 3fr 5fr 8fr;
+}
+
+.projects{
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: burlywood;
+}
+
+.todos{
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: blueviolet;
+}
+
+.desc{
+    text-align: center;
+    font-size: 24px;
+    background-color: darkgoldenrod;
+}
+
+.rectangle{
+    background-color: violet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+}
+
+.rectangleInput{
+    width: 50%;
+}
+
+.rectangleButton{
+    width: 50px;
+    height: 20px;
+}

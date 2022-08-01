@@ -1,6 +1,10 @@
+body{
+    background-color: #f1faee;
+}
+
 #gameboard{
-    width: 470px;
-    height: 470px;
+    width: 452px;
+    height: 452px;
 
     position: fixed;
     top: 50%;
@@ -10,45 +14,88 @@
     display: grid;
     grid-template: 150px 150px 150px/150px 150px 150px;
 
-    padding: 10px;
-    gap: 10px;
+    gap: 1px;
     align-items: center;
     justify-content: center;
     z-index: 1;
 
-    background-color: red;
+    background-color: black;
     
 }
 
 .box{
     width: 150px;
     height: 150px;
-    background-color: aqua;
+    background-color: white;
 
     display: flex;
     font-size: 100px;
-    color: white;
+    color: black;
 
-    cursor: pointer;
+    cursor: not-allowed;
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
     align-items: center;
     justify-content: center;
+
 }
 
-#control-board{
-    background-color: black;
+.boxClickable{
+    cursor: pointer;
+}
+
+#control-board-div{
     width: 490px;
-    height: 25px;
+    height: 50px;
     
     position: fixed;
     left: 50%;
     top: 12%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    flex-direction: column;
 
     transform: translate(-50%,-50%);
+}
+
+#start-button,
+#restart-button,
+input{
+    border-radius: 100px;
+    border-width: 0ch;
+}
+
+button{
+    background-color: #e42535;
+    color: #f1faee;
+    cursor: pointer;
+}
+
+button.disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+input{
+    border-width: 1px;
+}
+
+.hidden{
+    display: none;
+}
+
+#control-board{
+    height: 25px;
+}
+
+#announcement{
+    color: black;
+    font-size: 25px;
 }
